@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/orange-machine/static/css/main.073c9b0a.css",
-    "main.js": "/orange-machine/static/js/main.9abc41c8.js",
-    "static/js/787.d5bedebf.chunk.js": "/orange-machine/static/js/787.d5bedebf.chunk.js",
-    "static/media/logo.svg": "/orange-machine/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/orange-machine/static/css/main.924b4d2e.css",
+    "main.js": "/orange-machine/static/js/main.f28fdda4.js",
+    "static/media/bg.png": "/orange-machine/static/media/bg.6da3a09fd83d38214319.png",
+    "static/media/star.png": "/orange-machine/static/media/star.25e30d97cf044b4c8331.png",
+    "static/media/reviews_silver.webp": "/orange-machine/static/media/reviews_silver.0e3864514a2d8e46d887.webp",
     "index.html": "/orange-machine/index.html",
-    "main.073c9b0a.css.map": "/orange-machine/static/css/main.073c9b0a.css.map",
-    "main.9abc41c8.js.map": "/orange-machine/static/js/main.9abc41c8.js.map",
-    "787.d5bedebf.chunk.js.map": "/orange-machine/static/js/787.d5bedebf.chunk.js.map"
+    "main.924b4d2e.css.map": "/orange-machine/static/css/main.924b4d2e.css.map",
+    "main.f28fdda4.js.map": "/orange-machine/static/js/main.f28fdda4.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.9abc41c8.js"
+    "static/css/main.924b4d2e.css",
+    "static/js/main.f28fdda4.js"
   ]
 }
