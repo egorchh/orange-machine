@@ -1,0 +1,21 @@
+.root {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+}
+
+.logo {
+    display: flex;
+}
+
+.title {
+    align-self: end;
+    font-weight: bold;
+    margin-left: 6px;
+    margin-bottom: 3px;
+}
+
+.button {
+    padding-top: 6px;
+}

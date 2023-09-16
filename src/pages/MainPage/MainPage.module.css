@@ -1,0 +1,50 @@
+.root {
+    position: relative;
+    height: calc(100vh - 90px);
+    padding: 20px 30px 80px;
+}
+
+.trade {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.chatCloud {
+    position: absolute;
+    right: 22px;
+    top: 20%;
+    animation: rotateChatCloud ease infinite 6s;
+}
+
+.star {
+    position: absolute;
+    bottom: 0;
+    left: -15px;
+    animation: rotateStar ease-in-out infinite 4s;
+}
+
+@keyframes rotateStar {
+    0% {
+        transform: rotate(-25deg)
+    }
+    50% {
+        transform: rotate(-30deg)
+    }
+    100% {
+        transform: rotate(-25deg)
+    }
+}
+
+@keyframes rotateChatCloud {
+    0% {
+        transform: rotate(25deg)
+    }
+    50% {
+        transform: rotate(30deg)
+    }
+    100% {
+        transform: rotate(25deg)
+    }
+}
