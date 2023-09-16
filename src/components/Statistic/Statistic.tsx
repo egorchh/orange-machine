@@ -14,24 +14,6 @@ const Statistic = () => {
     const [data, setData] = useState<InfoResponse>(null);
     const [error, setError] = useState(true);
 
-    // const dataSource = [
-    //     {
-    //         key: '1',
-    //         id: 1,
-    //         price: 32,
-    //         amount: 123,
-    //         company: 'Company Ogurchiki'
-    //     }
-    // ];
-    //
-    // const columns = [
-    //     {
-    //         title: 'ID',
-    //         dataIndex: 'id',
-    //         key: 'id',
-    //     },
-    // ];
-
     // @ts-ignore
     const dataSource = [];
     const columns = [
