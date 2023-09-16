@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/orange-machine/static/css/main.924b4d2e.css",
-    "main.js": "/orange-machine/static/js/main.a052cb58.js",
+    "main.js": "/orange-machine/static/js/main.0b8ee796.js",
     "static/media/bg.png": "/orange-machine/static/media/bg.6da3a09fd83d38214319.png",
     "static/media/star.png": "/orange-machine/static/media/star.25e30d97cf044b4c8331.png",
     "static/media/reviews_silver.webp": "/orange-machine/static/media/reviews_silver.0e3864514a2d8e46d887.webp",
     "index.html": "/orange-machine/index.html",
     "main.924b4d2e.css.map": "/orange-machine/static/css/main.924b4d2e.css.map",
-    "main.a052cb58.js.map": "/orange-machine/static/js/main.a052cb58.js.map"
+    "main.0b8ee796.js.map": "/orange-machine/static/js/main.0b8ee796.js.map"
   },
   "entrypoints": [
     "static/css/main.924b4d2e.css",
-    "static/js/main.a052cb58.js"
+    "static/js/main.0b8ee796.js"
   ]
 }
