@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 30px;
     widht: 100%;
+    padding-bottom: 90px;
 }
 
 .button {
@@ -12,4 +13,14 @@
 
 .oranges {
     padding: 20px;
+}
+
+.tables {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tableTitle {
+    margin-bottom: 15px;
 }

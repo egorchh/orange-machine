@@ -16,6 +16,7 @@ const Statistic = () => {
 
     // @ts-ignore
     const dataSource = [];
+    const frozenSource = [];
     const columns = [
         {
             title: 'ID',
@@ -42,6 +43,11 @@ const Statistic = () => {
             const name = asset?.name;
             const quantity = asset?.quantity;
 
+            const frozen = data.frozenAssets[i];
+            const frozenId = frozen?.id;
+            const frozeName = frozen?.name;
+            const frozenQuantity = frozen?.quantity;
+
             if (perCompany !== name) {
                 if (id && name && quantity) {
                     dataSource.push({
@@ -49,6 +55,15 @@ const Statistic = () => {
                         id,
                         name,
                         quantity
+                    });
+                }
+
+                if (frozenId && frozeName && frozenQuantity) {
+                    frozenSource.push({
+                        key: id || 0,
+                        id: frozenId,
+                        name: frozeName,
+                        quantity: frozenQuantity
                     });
                 }
             }
@@ -68,7 +83,7 @@ const Statistic = () => {
                 .then(response => response.json())
                 .then(data => setData(data))
                 .catch(error => setError(error.message));
-        }, 5000);
+        }, 2000);
     }, []);
 
     const toggleButtonState = useCallback(() => {
@@ -88,9 +103,15 @@ const Statistic = () => {
                                     {data?.assets[0].name}: {data?.assets[0].quantity}
                                 </div>
                             </Col>
-                            <Col span={18}>
-                                {/* @ts-ignore */}
-                                <Table dataSource={dataSource.length ? dataSource : undefined} columns={columns} pagination={false} scroll={{ y: 300 }} />
+                            <Col span={18} className={styles.tables}>
+                                <div>
+                                    <h3 className={styles.tableTitle}>Активы:</h3>
+                                    <Table dataSource={dataSource.length ? dataSource : undefined} columns={columns} pagination={false} scroll={{ y: 200 }} />
+                                </div>
+                                <div>
+                                    <h3 className={styles.tableTitle}>В заморозке:</h3>
+                                    <Table dataSource={frozenSource.length ? frozenSource : undefined} columns={columns} pagination={false} scroll={{ y: 200 }} />
+                                </div>
                             </Col>
                         </Row>
                     </Fade>

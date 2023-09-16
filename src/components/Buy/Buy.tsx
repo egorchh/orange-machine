@@ -3,6 +3,7 @@ import {Button, Input} from "antd";
 
 import styles from './Buy.module.css';
 import {TOKEN} from "../../constants";
+import {openNotification} from "../Notification/Notification";
 
 const Buy = () => {
     const [idValue, setIdValue] = useState<number | undefined>(undefined);
@@ -29,6 +30,7 @@ const Buy = () => {
             .then(() => {
                 setSuccess(true)
                 setError(false)
+                openNotification('Запрос на покупку отправлен');
             })
             .catch(error => setError(true))
             .finally(() => {

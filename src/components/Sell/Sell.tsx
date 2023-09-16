@@ -3,6 +3,7 @@ import {Button, Input} from "antd";
 
 import styles from './Sell.module.css';
 import {TOKEN} from "../../constants";
+import {openNotification} from "../Notification/Notification";
 
 const Sell = () => {
     const [idValue, setIdValue] = useState<number | undefined>(undefined);
@@ -29,8 +30,12 @@ const Sell = () => {
             .then(() => {
                 setSuccess(true)
                 setError(false)
+                openNotification('Запрос на продажу отправлен');
             })
-            .catch(error => setError(true))
+            .catch(error => {
+                setError(true)
+                openNotification('Ошибка запроса', 'Проверьте, хватает ли бумаг в портфеле для сделки');
+            })
             .finally(() => {
                 setSuccess(false);
                 setError(false);
@@ -54,7 +59,7 @@ const Sell = () => {
             <Input value={idValue} placeholder='ID' type='number' onChange={handlerChangeId} />
             <Input value={price} placeholder='Цена за акцию' type='number' onChange={handlerChangePrice} />
             <Input value={amount} placeholder='Количество' type='number' onChange={handlerChangeAmount} />
-            <Button className={styles.button} type='primary' onClick={sellOranges}>
+            <Button type='primary' onClick={sellOranges}>
                 Продать акции
             </Button>
         </div>
